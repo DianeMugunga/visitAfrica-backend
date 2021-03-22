@@ -131,7 +131,7 @@ class AuthController {
 	/**
    * @param {object} req
    * @param {object} res
-   * @returns {object} helping the user to reset the password
+   * @returns {object} reset the password
    */
 	static async forgetPassword(req, res) {
 		const decodedToken = await TokenService.verifyToken(req.query.token);
